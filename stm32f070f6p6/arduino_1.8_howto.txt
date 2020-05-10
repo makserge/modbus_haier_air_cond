@@ -1,0 +1,36 @@
+1. Copy DEMO_F070F6 
+to
+C:\Users\<Username>\AppData\Local\Arduino15\packages\STM32\hardware\stm32\1.8.0\variants\DEMO_F070F6 
+
+2. Edit C:\Users\<Username>\AppData\Local\Arduino15\packages\STM32\hardware\stm32\1.8.0\boards.txt
+
+add 
+
+# DEMO_F070F6 board
+GenF0.menu.pnum.DEMO_F070F6=STM32F070F6 Demo board
+GenF0.menu.pnum.DEMO_F070F6.upload.maximum_data_size=6144
+GenF0.menu.pnum.DEMO_F070F6.upload.maximum_size=32768
+GenF0.menu.pnum.DEMO_F070F6.build.board=DEMO_F070F6
+GenF0.menu.pnum.DEMO_F070F6.build.product_line=STM32F070x6
+GenF0.menu.pnum.DEMO_F070F6.build.variant=DEMO_F070F6
+
+# DEMO_F070F6_16M board
+GenF0.menu.pnum.DEMO_F070F6_16M=STM32F070F6 Demo board (16Mhz)
+GenF0.menu.pnum.DEMO_F070F6_16M.upload.maximum_data_size=6144
+GenF0.menu.pnum.DEMO_F070F6_16M.upload.maximum_size=32768
+GenF0.menu.pnum.DEMO_F070F6_16M.build.board=DEMO_F070F6_16M
+GenF0.menu.pnum.DEMO_F070F6_16M.build.product_line=STM32F070x6
+GenF0.menu.pnum.DEMO_F070F6_16M.build.variant=DEMO_F070F6
+
+after 
+
+# DEMO_F030F4_HSI board
+GenF0.menu.pnum.DEMO_F030F4_HSI=STM32F030F4 Demo board (internal RC oscillator)
+GenF0.menu.pnum.DEMO_F030F4_HSI.upload.maximum_data_size=4096
+GenF0.menu.pnum.DEMO_F030F4_HSI.upload.maximum_size=16384
+GenF0.menu.pnum.DEMO_F030F4_HSI.build.board=DEMO_F030F4_HSI
+GenF0.menu.pnum.DEMO_F030F4_HSI.build.product_line=STM32F030x6
+GenF0.menu.pnum.DEMO_F030F4_HSI.build.variant=DEMO_F030F4
+
+
+3. Restart Arduino and select Tools->Board: Generic STM32F0->Board part number: STM32F070F6 Demo board
